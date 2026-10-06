@@ -4,7 +4,7 @@ Modified RPCS3 with rollback netcode (GGPO principle) for Tekken 6 online play (
 Works in Player Match and Ranked Match.
 
 Download: see **Releases** (`tekken6_rollback.zip`). The package contains neither the PS3 firmware nor the game.
-Both players must use the same build. Start the game with `hrat_online.bat`.
+Both players must use the same build. Start the game with `play_online.bat`.
 
 ```
 TEKKEN 6 (PS3, RPCS3) - ONLINE WITH ROLLBACK NETCODE
@@ -42,9 +42,9 @@ Installation (first time only)
 
 Playing
 -------
-1. Start hrat_online.bat. RPCS3 opens with the rollback settings. Starting rpcs3.exe directly,
+1. Start play_online.bat. RPCS3 opens with the rollback settings. Starting rpcs3.exe directly,
    without the .bat, gives you NO rollback. The delay is automatic. A fixed delay is only for
-   special cases, e.g.: hrat_online.bat 2
+   special cases, e.g.: play_online.bat 2
 2. In RPCS3 start Tekken 6 and go to Online Mode.
    Player Match: one player creates a session (Create Session), the other joins
    (Custom Match > Search > Join). Ranked Match works too.
@@ -64,8 +64,9 @@ Known limitations
 - Rollback only runs during the fight itself. Character select and menus run as in the original
   game.
 - During a re-simulation new sounds are not started again (so a hit is not heard twice).
-- Sound: the stage music may stop during a match and some hit sounds can sound slightly
-  distorted. Being worked on.
+- Sound: the stage music is muted during the fight itself (rollbacks distorted it); intros,
+  KO scenes and menus keep it. Hit sounds are not rolled back: a hit that only the corrected
+  timeline has may stay silent. Sound may still be slightly imperfect. Being worked on.
 - The PS3 firmware and the game are not included. You need your own copy.
 ```
 
@@ -107,8 +108,8 @@ Instalace (jen poprvé)
 
 Hraní
 -----
-1. Spusť hrat_online.bat (RPCS3 se otevře s nastavením rollbacku; samotné rpcs3.exe bez .bat
-   rollback NEMÁ). Delay je automatický. Ruční pevný delay jen výjimečně: hrat_online.bat 2
+1. Spusť play_online.bat (RPCS3 se otevře s nastavením rollbacku; samotné rpcs3.exe bez .bat
+   rollback NEMÁ). Delay je automatický. Ruční pevný delay jen výjimečně: play_online.bat 2
 2. V RPCS3 spusť Tekken 6 a jdi do Online Mode > Player Match.
    Jeden vytvoří místnost (Create Session), druhý se připojí (Custom Match > Search > Join).
 3. Hraj normálně. Spojení má být stabilní (kabel lepší než Wi-Fi). Když pakety chvíli
