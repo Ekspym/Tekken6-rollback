@@ -6,6 +6,14 @@ Works in Player Match and Ranked Match.
 Download: see **Releases** (`tekken6_rollback.zip`). The package contains neither the PS3 firmware nor the game.
 Both players must use the same build. Start the game with `play_online.bat`.
 
+## Source code
+
+The rollback is open source (GPL-2.0, like RPCS3). Default branch `tekken6-rollback` in each fork:
+
+- [Ekspym/rpcs3](https://github.com/Ekspym/rpcs3) - RPCS3 with the rollback (`rpcs3/Emu/Rollback/`), build notes in `TEKKEN6_ROLLBACK.md`
+- [Ekspym/ggpo](https://github.com/Ekspym/ggpo) - GGPO settings used by the rollback
+- [Ekspym/ps3recomp](https://github.com/Ekspym/ps3recomp) - recompiler fixes for the native code
+
 ```
 TEKKEN 6 (PS3, RPCS3) - ONLINE WITH ROLLBACK NETCODE
 =====================================================
@@ -130,4 +138,4 @@ Známá omezení
 ```
 
 ## Licence
-RPCS3 je licencováno pod GPL-2.0 (https://github.com/RPCS3/rpcs3). Tento balíček je upravený build RPCS3; zdrojový kód úprav je dostupný na vyžádání u autora repozitáře.
+RPCS3 je licencováno pod GPL-2.0 (https://github.com/RPCS3/rpcs3). Tento balíček je upravený build RPCS3; zdrojový kód úprav je veřejný: [Ekspym/rpcs3](https://github.com/Ekspym/rpcs3), [Ekspym/ggpo](https://github.com/Ekspym/ggpo) a [Ekspym/ps3recomp](https://github.com/Ekspym/ps3recomp) (výchozí větev `tekken6-rollback`).
